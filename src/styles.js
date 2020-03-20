@@ -15,12 +15,25 @@ const styles = StyleSheet.create({
     boxText:{
         justifyContent:'center',
         flexDirection: 'column',
-        marginLeft: 10
+        marginLeft: 10,
+        alignItems: 'center'
+    },
+    textChoice:{
+        marginBottom:10,
+        fontSize: 20,
     },
     boxBtn:{
         justifyContent: 'space-evenly',
         flexDirection: 'row',
-        margin:60
+        margin:30,
+    },
+    textResultado:{
+        fontSize: 25,
+        fontWeight: 'bold',
+        color: 'red',
+    },
+    Images:{
+        marginBottom: 20
     }
 })
 

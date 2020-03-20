@@ -1,17 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Button, Image } from 'react-native'
 import styles from './src/styles'
-import logo from './src/images/joquempow.png'
-
-class Header extends Component{
-    render(){
-        return(
-            <View style={styles.header} >
-                <Image source={logo} />
-            </View>
-        );
-    }
-}
+import Header from './src/Header'
+import Icone from './src/Icone'
 
 class App extends Component{
 
@@ -94,15 +85,15 @@ class App extends Component{
             <>
                 <Header />
                 <View style={styles.content} >
-                    <View style={styles.boxText} >
-                        <Text>Escolha do Usuário: {this.state.userChoice} </Text>
-                        <Text>Escolha do Computador: {this.state.userComputer} </Text>
-                        <Text>Resultado: {this.state.resultado} </Text>
-                    </View>
                     <View style={styles.boxBtn} >
-                        <Button title="Pedra" onPress={() => { this.theChoice('Pedra') } } />
-                        <Button title="Papel" onPress={() => { this.theChoice('Papel') } }  />
-                        <Button title="Tesoura" onPress={() => { this.theChoice('Tesoura') } } />
+                        <Button title="Pedra" onPress={() => { this.theChoice('Pedra') }} />
+                        <Button title="Papel" onPress={() => { this.theChoice('Papel') }} />
+                        <Button title="Tesoura" onPress={() => { this.theChoice('Tesoura') }} />
+                    </View>
+                    <View style={styles.boxText} >
+                        <Icone choice={this.state.userChoice}  player="Você" ></Icone>
+                        <Icone choice={this.state.userComputer}  player="computer" ></Icone>
+                        <Text style={styles.textResultado} >{this.state.resultado} </Text>
                     </View>
                 </View>
             </>
@@ -110,6 +101,5 @@ class App extends Component{
     }
 
 }
-
 
 export default App;
