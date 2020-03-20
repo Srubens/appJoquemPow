@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     },
     textChoice:{
         marginBottom:10,
-        fontSize: 20,
+        fontSize: 20
     },
     boxBtn:{
         justifyContent: 'space-evenly',
@@ -29,12 +29,12 @@ const styles = StyleSheet.create({
     },
     textResultado:{
         fontSize: 25,
-        fontWeight: 'bold',
-        color: 'red',
+        fontWeight: 'bold'
     },
     Images:{
         marginBottom: 20
     }
 })
+
 
 export default styles;

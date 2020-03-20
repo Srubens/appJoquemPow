@@ -27,6 +27,8 @@ class App extends Component{
             break;
             case 2: choiceComputer = 'Tesoura';
             break;
+            default:
+                choiceComputer = '';
         }
 
         let resultado = '';
@@ -81,6 +83,7 @@ class App extends Component{
     }
 
     render(){
+
         return(
             <>
                 <Header />

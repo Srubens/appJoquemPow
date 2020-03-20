@@ -30,9 +30,9 @@ class Icone extends Component {
                     <Image style={styles.Images} source={Tesoura} />
                 </View>
             );
-        } else {
-            return false
-        }
+        } 
+        
+        return false
 
     }
     
